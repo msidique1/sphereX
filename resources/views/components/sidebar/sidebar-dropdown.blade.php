@@ -8,7 +8,7 @@
         </svg>
         <span class="flex-1 ml-3 text-left whitespace-nowrap">{{ $label }}</span>
         <svg class="w-6 h-6 focus:rotate-180 transition-transform duration-300" :class="{ 'rotate-180': open }" viewBox="0 0 20 20">
-            {{ svg('eva-arrow-ios-downward') }}
+            {{ svg('ri-arrow-down-s-line') }}
         </svg>
     </button>
 

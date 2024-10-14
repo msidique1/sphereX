@@ -3,25 +3,28 @@
         {{ $breadcrumb }}
     </x-slot>
 
-    <div class="pb-5 pt-3 flex flex-wrap justify-start w-full">
-        <a href="/dosen/management-mahasiswa/add-edit-mahasiswa"
-            class="text-white bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-4 md:mt-0 sm:mt-0">
-            {{ __('Tambah') }}
-        </a>
-    </div>
-
     @if (session('notify'))
         <x-notification.notify />
     @endif
 
-    <div class="w-full md:w-1/2 flex items-center p-4 rounded-md bg-blue-700 mb-4">
-        <span class="mr-4">
-            <x-ionicon-warning class="text-white h-5 w-5" />
-        </span>
-        <p class="text-base font-medium text-white">
-            {{ __('List Mahasiswa yang terdaftar di kelas anda') }}
-        </p>
+    <div class="flex flex-col md:flex-row justify-between items-center my-3 mt-8">
+        <div class="w-full md:w-1/2 flex items-center p-3 rounded-md bg-blue-700 mb-4 md:mb-0">
+            <span class="mr-4">
+                <x-ri-error-warning-line class="text-white h-5 w-5" />
+            </span>
+            <p class="text-base font-medium text-white">
+                {{ __('List Mahasiswa yang terdaftar di kelas anda') }}
+            </p>
+        </div>
+    
+        <div class="flex justify-end w-full md:w-auto">
+            <a href="/dosen/management-mahasiswa/add-edit-mahasiswa"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-3 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                {{ __('Tambah Data') }}
+            </a>
+        </div>
     </div>
+    
 
     <div class="overflow-x-auto">
         <table class="w-full table-auto shadow-md">

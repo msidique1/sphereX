@@ -7,7 +7,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MahasiswaController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::middleware('auth')->group(function () {
@@ -62,7 +62,7 @@ Route::middleware(['auth', 'role:dosen'])->group(function() {
 // All Mahasiswa Routes
 Route::middleware(['auth', 'role:mahasiswa'])->group(function() {
     Route::get('/mahasiswa/dashboard', [MahasiswaController::class, 'index'])->name('mahasiswa.dashboard');
-    Route::get('/mahasiswa/detail/{id}', [MahasiswaController::class, 'show'])->name('mahasiswa.detail');
+    Route::get('/mahasiswa/detail/{id}', [MahasiswaController::class, 'show'])->name('mahasiswa.show-detail');
 
     // Request session
     Route::get('/mahasiswa/request-edit', [MahasiswaController::class, 'requestEditView'])->name('mahasiswa.request-edit');

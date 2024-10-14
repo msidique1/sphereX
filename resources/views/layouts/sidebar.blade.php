@@ -17,14 +17,14 @@
             <x-sidebar.sidebar-link 
                 :route="$userRole . '.dashboard'" 
                 :active-tab="$currentRoute" 
-                icon="ri-dashboard-3-fill" 
+                icon="ri-dashboard-fill" 
                 label="Dashboard" />
 
             {{-- Dropdown untuk Kaprodi --}}
             @if($userRole === 'kaprodi')
                 <x-sidebar.sidebar-dropdown 
                     label="Manajemen Data" 
-                    icon="coolicon-file-document">
+                    icon="ri-file-3-fill">
                     <x-sidebar.sidebar-link 
                         :route="$userRole . '.management-dosen'" 
                         :active-tab="$currentRoute" 
@@ -32,6 +32,10 @@
                     <x-sidebar.sidebar-link 
                         label="Manajemen Kelas" 
                         :route="$userRole . '.management-kelas'"
+                        :active-tab="$currentRoute" />
+                    <x-sidebar.sidebar-link 
+                        label="Daftar Mahasiswa" 
+                        :route="$userRole . '.show-mahasiswa'"
                         :active-tab="$currentRoute" />
                     <x-sidebar.sidebar-link 
                         label="Plotting" 
@@ -44,7 +48,7 @@
             @if($userRole === 'dosen')
                 <x-sidebar.sidebar-dropdown 
                     label="Manajemen Data"
-                    icon="coolicon-file-document"
+                    icon="ri-file-3-fill"
                     >
                     <x-sidebar.sidebar-link 
                         :route="$userRole . '.management-mahasiswa'" 
@@ -66,13 +70,13 @@
             <x-sidebar.sidebar-link 
                 route="mahasiswa.request-edit" 
                 :active-tab="$currentRoute" 
-                icon="bxs-edit" 
+                icon="fas-edit" 
                 label="Permintaan Edit" 
                 />
             <x-sidebar.sidebar-link 
-                route="mahasiswa.show-detail" 
+                :route="'mahasiswa.show-detail', ['id' => auth()->user()->id]" 
                 :active-tab="$currentRoute" 
-                icon="bxs-edit" 
+                icon="ri-user-search-line" 
                 label="User Detail" 
                 />
             @endif

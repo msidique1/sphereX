@@ -7,7 +7,7 @@
         <x-notification.notify />
     @endif
 
-    <div class="overflow-x-auto">
+    <div class="overflow-x-auto mt-5">
         <table class="w-full table-auto shadow-md text-">
             <thead>
                 <tr class="bg-slate-600">

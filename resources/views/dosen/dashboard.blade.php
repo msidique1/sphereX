@@ -18,13 +18,13 @@
                 'color' => 'text-cyan-400',
             ],
             [
-                'icon' => 'tabler-report-analytics',
+                'icon' => 'fas-file-circle-exclamation',
                 'title' => 'Total Permintaan Laporan',
                 'value' => $requestModel,
                 'color' => 'text-indigo-500',
             ],
             [
-                'icon' => 'heroicon-s-user-group',
+                'icon' => 'fas-user-graduate',
                 'title' => 'Status Aktif Dosen',
                 'value' => $dosenAvaibility,
                 'color' => 'text-yellow-300',

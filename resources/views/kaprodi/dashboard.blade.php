@@ -16,13 +16,13 @@
                 'color' => 'text-green-400',
             ],
             [
-                'icon' => 'ionicon-school-sharp',
+                'icon' => 'fas-dice-d6',
                 'title' => 'Jumlah Kelas',
                 'value' => $kelas->count(),
                 'color' => 'text-cyan-400',
             ],
             [
-                'icon' => 'heroicon-s-user-group',
+                'icon' => 'fas-users',
                 'title' => 'Jumlah Mahasiswa',
                 'value' => $mahasiswa->count(),
                 'color' => 'text-yellow-300',

@@ -7,25 +7,13 @@
     "require": {
         "php": "^8.1",
         "andreiio/blade-remix-icon": "^3.3",
-        "blade-ui-kit/blade-heroicons": "^2.4",
-        "blade-ui-kit/blade-icons": "^1.7",
-        "brunocfalcao/blade-feather-icons": "^4.0",
-        "codeat3/blade-carbon-icons": "*",
-        "codeat3/blade-coolicons": "^1.5",
-        "codeat3/blade-google-material-design-icons": "^1.19",
-        "davidhsianturi/blade-bootstrap-icons": "^1.5",
-        "faisal50x/blade-ionicons": "^1.0",
+        "blade-ui-kit/blade-ui-kit": "^0.6.2",
         "guzzlehttp/guzzle": "^7.2",
-        "hasnayeen/blade-eva-icons": "^2.0",
         "laravel/breeze": "*",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
-        "mallardduck/blade-boxicons": "^2.4",
-        "mckenziearts/laravel-notify": "^2.5",
-        "owenvoke/blade-fontawesome": "^2.6",
-        "ryangjchandler/blade-tabler-icons": "^2.3",
-        "spatie/laravel-responsecache": "^7.6"
+        "owenvoke/blade-fontawesome": "^2.6"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

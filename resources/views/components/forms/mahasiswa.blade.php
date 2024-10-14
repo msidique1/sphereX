@@ -39,7 +39,7 @@
 
     <div class="flex my-2 mt-5 justify-end items-end">
         <button type="submit" class="flex justify-center items-center gap-3 w-full lg:w-1/4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
-            <x-feathericon-save class="w-5 h-5" />
+            <x-ri-save-line class="w-5 h-5" />
             Simpan Perubahan
         </button>
     </div>

@@ -1,7 +1,7 @@
-@props(['route' => null, 'activeTab' => '', 'icon' => 'eva-chevron-right', 'label'])
+@props(['route' => null, 'activeTab' => '', 'icon' => 'ri-arrow-right-s-line', 'label'])
 
 <li>
-    <a href="{{ $route ? route($route) : '#' }}" @click="activeTab = '{{ $route }}'"
+    <a href="{{ $route ? route($route, ['id' => auth()->user()->id]) : '#' }}" @click="activeTab = '{{ $route }}'"
         :class="{
             'bg-gray-100 dark:bg-gray-700': activeTab === '{{ $route }}'
         }"

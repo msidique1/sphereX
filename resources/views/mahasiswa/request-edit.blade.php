@@ -27,7 +27,7 @@
                         <h2 class="text-lg font-semibold text-gray-800 mb-4">{{ $mhs->name }}</h2>
                         <div
                             class="flex items-center justify-start gap-3 w-full lg:w-1/2 bg-green-500 p-3 rounded-md shadow-sm">
-                            <x-gmdi-read-more-r class="w-6 h-6 text-white" />
+                            <x-ri-book-read-fill class="w-6 h-6 text-white" />
                             <span class="font-medium text-white">
                                 Status Edit saat ini yaitu
                                 {{ $mhs->edit ? 'Dapat Mengedit' : 'Tidak Dapat Mengedit' }}

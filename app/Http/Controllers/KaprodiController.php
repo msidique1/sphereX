@@ -50,7 +50,7 @@ class KaprodiController extends Controller {
 
         return view('kaprodi.show-mahasiswa', [
             'breadcrumb' => 'Daftar Mahasiswa',
-            'kelas' => $mahasiswa,
+            'mahasiswa' => $mahasiswa,
         ]);
     }
 
