@@ -32,6 +32,10 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 ## Get Clone Repository
 
+Clone this repository, and paste it to terminal.
+
+`git clone link@repository`
+
 First of all, install the required dependencies!
 
 `composer install`
@@ -39,6 +43,8 @@ First of all, install the required dependencies!
 Create the _.env_ file with sample of .env-example
 
 Dont forget to `php artisan key:generate` to generate key to the _.env_
+
+And also don't forget to migrate and seeding the database with `php artisan migrate:fresh --seed`
 
 ## Start The Program
 

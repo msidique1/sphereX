@@ -19,10 +19,12 @@ class MahasiswaController extends Controller {
 
     public function requestEditView(): View {
         $mahasiswa = Mahasiswa::with('kelas')->where('user_id', auth()->id())->get();
+        $request = ModelsRequest::where('mahasiswa_id', auth()->id())->get()->count();
 
         return view('mahasiswa.request-edit', [
             'breadcrumb' => 'Permintaan Edit',
             'mahasiswa' => $mahasiswa,
+            'request' => $request,
         ]);
     }
 
